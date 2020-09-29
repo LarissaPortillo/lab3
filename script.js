@@ -11,3 +11,5 @@ d3.csv('https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2Fcities.csv
 function filterEU(d){
   return d.filter(l=> l.eu == true);
 };
+
+d3.select('.city-count').text(...);
