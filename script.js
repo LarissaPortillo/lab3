@@ -8,7 +8,7 @@ d3.csv('https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2Fcities.csv
   data = data.filter(d=>d.eu == true);
   console.log('cities', data);
   
-  d3.select('.city-count').text();
+  d3.select('.city-count').text(d=>`data-${d}`);
                               
   svg.selectAll('circle')
   .data(data)
@@ -16,7 +16,9 @@ d3.csv('https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2Fcities.csv
   .append('circle')
   .attr('cx', function (d,i){
     return i*100;
-  });
+  })
+  .attr('cy')
+  ;
   
 });
 
