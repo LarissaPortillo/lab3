@@ -14,10 +14,9 @@ d3.csv('https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2Fcities.csv
   .data(data)
   .enter()
   .append('circle')
-  .attr('cx', function (d,i){
-    return i*100;
-  })
-  .attr('cy')
+  .attr('cx', (d,i)=> i*20)
+  .attr('cy',25)
+  .attr('r', )
   ;
   
 });
