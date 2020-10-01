@@ -30,7 +30,34 @@ svg.selectAll('rect')
         d3.select('.floors').text(d.floors);
         d3.select('.image').attr('src',(d)=>{
           if(d.image=='1.jpg'){
-            return https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F1.jpg?v=1601524359483;
+            return 'https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F1.jpg?v=1601524359483';
+          }
+          if(d.image=='2.jpg'){
+            return 'https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F2.jpg?v=1601524364884';
+          }
+          if(d.image=='3.jpg'){
+            return 'https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F3.jpg?v=1601524373212';
+          }
+           if(d.image=='4.jpg'){
+            return 'https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F4.jpg?v=1601524378637';
+          }
+           if(d.image=='5.jpg'){
+            return 'https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F5.jpg?v=1601524383939';
+          }
+           if(d.image=='6.jpg'){
+            return 'https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F6.jpg?v=1601524388744';
+          }
+           if(d.image=='7.jpg'){
+            return 'https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F7.jpg?v=1601524396069';
+          }
+           if(d.image=='8.jpg'){
+            return 'https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F8.jpg?v=1601524400655';
+          }
+           if(d.image=='9.jpg'){
+            return 'https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F9.jpg?v=1601524407647';
+          }
+           if(d.image=='10.jpg'){
+            return 'https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F10.jpg?v=1601524411961';
           }
         });
         
