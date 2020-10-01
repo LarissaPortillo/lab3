@@ -17,7 +17,7 @@ svg.selectAll('rect')
     .enter()
     .append('rect')
     .attr("class","bar")
-    .attr('x',250)
+    .attr('x',192)
     .attr('y', (d,i)=>(i+1)*40)
     .attr('height', 30)
     .attr('width', (d)=>d.height_px)
@@ -34,15 +34,27 @@ svg.selectAll('rect')
         
     });
 
-svg.selectAll('text')
+svg.selectAll('text.title')
         .data(build)
         .enter()
         .append('text')
-        .attr('x',245)
+        .attr('class','title')
+        .attr('x',188)
         .attr('y', (d,i)=>(i+1)*40)
         .attr('dy',20)
         .text((d)=>d.building )
         .attr('text-anchor','end')
-        .attr('font-size', 15);
+        .attr('font-size', 12);
 
+svg.selectAll('text.value')
+    .data(build)
+    .enter()
+    .append('text')
+    .attr('class','value')
+    .attr('x',(d)=>{return (d.height_px+192);})
+    .attr('y', (d,i)=>(i+1)*40)
+    .attr('dy',20)
+    .text((d)=>{return d.height_ft+'ft';})
+    .attr('text-anchor','start')
+    .attr('font-size', 11);
 });
