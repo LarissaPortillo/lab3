@@ -9,6 +9,10 @@
     <!-- import the webpage's javascript file -->
     <script defer src="https://d3js.org/d3.v6.min.js"></script>
     <script defer src="/script.js" defer></script>
+     <script defer src="/script2.js" defer></script>
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    
     
     
     <div class="container">
@@ -17,17 +21,46 @@
     </h2>
     <div class="city-count"></div>
     <div class="population-plot"></div>
-    <svg>
-    const width = 700;
-    const height = 550;
-    const svg = d3.select('.population-plot')
-        .append('svg')
-        .attr('width', width)
-        .attr('height', height)
-      
-    <circle cx="50" cy="50" r="50"/>
-    </svg>
+        <svg></svg>
     
+      
+      <h2>
+      Buildings
+    </h2>
+   
+
+        
+      </div>
+    
+      <div class="row">
+        <div class="building-chart"></div>
+      
+        <div class="column column-50 column-offset-25">
+            <h4 class="building-name"></h4>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Height</td>
+                  <td><span class="height"></span> ft</td>
+                </tr>
+                <tr>
+                  <td>City</td>
+                  <td><span class="city"></span></td>
+                </tr>
+                <tr>
+                    <td>Floors</td>
+                    <td><span class="floors"></span></td>
+                </tr>
+                <tr>
+                    <td>Year Completed</td>
+                    <td><span class="year"></span></td>
+                </tr>
+                      ...
+              </tbody>
+            </table></div>
+      </div>
+    
+
     </div>
   
   </head>  
