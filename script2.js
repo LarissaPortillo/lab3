@@ -28,9 +28,11 @@ svg.selectAll('rect')
         d3.select('.city').text(d.city);
         d3.select('.year').text(d.completed);
         d3.select('.floors').text(d.floors);
-        var img=document.createElement('img');
-        img.src=d.image;
-        d3.select('.image').appendChild(img);
+        d3.select('.image').attr('src',(d)=>{
+          if(d.image=='1.jpg'){
+            return https://cdn.glitch.com/13954448-9de1-4018-9e2a-9b65a98670e1%2F1.jpg?v=1601524359483;
+          }
+        });
         
     });
 
